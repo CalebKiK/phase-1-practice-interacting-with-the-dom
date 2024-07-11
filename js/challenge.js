@@ -35,17 +35,18 @@ plusSign.addEventListener("click", function(){
             a.innerText = b + 1;
 });
 
-heartSign.addEventListener("click", function(){
+heartSign.addEventListener("click", function() {
     let a = document.getElementById("counter"),
-            b = parseInt(a.innerText);
-            c = document.querySelector(".likes");
+            b = parseInt(a.innerText),
+            c = document.querySelector(".likes"),
             d = void 0;
         if (
-            [] .concat(consumableArray(c.children))
+            [] 
+            .concat(consumableArray(c.children))
             .map(function(a) {
                 return parseInt(a.dataset.num);
             })
-            .included(b)
+            .includes(b)
         ) {
             d = document.querySelector('[data-num"' + b + '"]');
             let e = parseInt(d.children[0].innerText);
